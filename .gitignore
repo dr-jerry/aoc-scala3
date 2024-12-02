@@ -15,6 +15,8 @@ project/local-plugins.sbt
 .sbt-scripted/
 local.sbt
 
+sessionID
+
 # Bloop
 .bsp
 
@@ -30,3 +32,6 @@ metals.sbt
 .idea
 .idea_modules
 /.worksheet/
+
+*~
+\#*
