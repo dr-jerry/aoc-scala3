@@ -13,7 +13,7 @@ class AOCUtils {
         .get(uri"https://adventofcode.com/$year/day/$day/input")
         .send()
 
-    println(s"the response '${response.body}'")
+    //println(s"the response '${response.body}'")
     return response.body
   
 

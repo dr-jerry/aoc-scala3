@@ -2,8 +2,7 @@ package nl.itjer.aoc.`2024`
 
 import nl.itjer.aoc.AOCUtils
 
-class Day01
-  val all = new AOCUtils().getFromAOC(2024, 1).split("\n")
+object Day01:
 
   def parse(input: Seq[String]): Seq[(Long, Long)] =
     input.map(line => line match {
@@ -11,7 +10,9 @@ class Day01
     })
 
 
-  @main def run: Unit =
+  def main(args: Array[String]): Unit =
+    val all = new AOCUtils().getFromAOC(2024, 1).split("\n")
+
     println(s"part1: ${part1(all)}")
     println (s"part2 ${part2(all)}")
 
