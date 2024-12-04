@@ -20,9 +20,6 @@ object Day03:
       println(mat.matched)
       result += mat.group(1).toLong * mat.group(2).toLong
     return result.toString()
-    instructions.split("mull(\\d+,\\d+)").toList.filter(ml => {println("ml : " + ml);
-     ml.startsWith("mul")}).map(mul => mul match {
-      case s"mul($left,$right)" => left.toLong * right.toLong}).sum.toString()
     
   def part2(instructions: String): String =
     var result = 0L

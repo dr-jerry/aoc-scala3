@@ -2,9 +2,9 @@ package nl.itjer.aoc.`2015`
 
 import nl.itjer.aoc.AOCUtils
 
-class Day01
+object Day01 {
   val all = new AOCUtils().getFromAOC(2015, 1);
-  @main def run: Unit =
+  def main(args: Array[String]): Unit =
     part1()
     println (s"part2 ${part2()._1}")
 
@@ -27,4 +27,4 @@ class Day01
                 tup
        
     )
-
+}
